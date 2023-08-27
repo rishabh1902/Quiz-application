@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.skip-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skip-btn:hover {
+    background-color: #e68a00;
+}
+
+
+.question-nav button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-nav button:hover {
+    background-color: #ccc;
+}
+.question-nav {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px; /* Add space between the navigation tab and question container */
+}
+
+
+
+
+
+
+.question-nav button.attempted {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+.quiz-container {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: flex-start;
+}
+
+
+/* Update the .question class */
+.question {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Update the .options class */
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.submit-btn {
+    display: none; /* Hide the submit button */
+}
+
+
+
+.timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+
+.option {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #f4f4f4;
+}
+.result .skip-btn {
+    display: none;
+}
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+.exit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
